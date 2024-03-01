@@ -1,7 +1,6 @@
 {
   "name": "appaventuriv2",
   "private": true,
-  "homepage": "https://djcadaniel.github.io/appaventuriv2/dist",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
