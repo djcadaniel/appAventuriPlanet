@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { ItemNavbar } from "./ItemNavbar"
-import logo from '/appAventuriPlanet/img/desktop/logo.png'
+import logo from '../../../../public/img/desktop/logo.png'
 
 export const listRoute = [
   {
