@@ -1,4 +1,5 @@
-import imgUniverse from '../../../../public/img/desktop/backgrounImage.png';
+// import imgUniverse from '../../../../public/img/desktop/backgrounImage.png';
+import imgUniverse from '/appAventuriPlanet/img/desktop/backgrounImage.png';
 
 export const Home = () => {
   return (
