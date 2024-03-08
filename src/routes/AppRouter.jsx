@@ -6,7 +6,7 @@ export const AppRouter = () => {
   return (
     <Routes>
       <Route path='login' element={<LoginPage />}/>
-      <Route path ='/appAventuriPlanet/*' element={<AventuriRoutes />}/>
+      <Route path ='/*' element={<AventuriRoutes />}/>
     </Routes>
   )
 }
