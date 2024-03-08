@@ -5,16 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/appAventuriPlanet/",
-  // publicDir: 'appAventuriPlanet',
-  // esbuild: {
-  //   loader: 'jsx',
-  // },
-  build: {
-    rollupOptions: {
-      external: [
-        '/appAventuriPlanet/img/desktop/backgrounImage.png',
-        '/appAventuriPlanet/img/desktop/logo.png'
-      ],
-    }
-  }
 })
