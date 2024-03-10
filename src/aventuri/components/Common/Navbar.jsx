@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { ItemNavbar } from "./ItemNavbar"
-// import logo from '../../../../public/img/desktop/logo.png'
-import logo from '/img/desktop/logo.png'
+// import logo from '../../../../public/img/desktop/logo.png
 
 export const listRoute = [
   {
@@ -27,15 +26,13 @@ export const listRoute = [
 ]
 
 export const Navbar = () => {
+
+  const {pathname} = useLocation()
+
   return (
-    <header className="fixed top-0 w-full bg-transparent">
+    <header className={`fixed top-0 w-full ${ (pathname === '/' ? 'bg-blue-900/80' : 'bg-blue-400')}`}>
       <nav className="main flex flex-row w-full max-w-screen-xl items-center gap-3">
-        <div className="w-[20%] lg:w-[8%] p-5">
-          <Link className='text-gray-100' to='/'>
-            <img className="w-full" src={logo} alt="logo del sitio web" />
-          </Link>
-        </div>
-        <div className="w-[80%] lg:w-[92%] flex flex-row items-center justify-center p-5">
+        <div className="w-full lg:w-[92%] flex flex-row items-center justify-center p-2">
           <ul className="flex gap-5">
             {
               listRoute.map(item => (

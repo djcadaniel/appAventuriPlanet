@@ -1,4 +1,5 @@
 // import imgUniverse from '../../../../public/img/desktop/backgrounImage.png';
+import { BtnDark } from '../../components/Base/BtnDark';
 import imgUniverse from '/img/desktop/backgrounImage.png';
 
 export const Home = () => {
@@ -11,8 +12,8 @@ export const Home = () => {
             <span> </span>
             <span className='block sm:inline-block'>Planet</span>
           </p>
-          <br />
           <p className='text-2xl text-gray-300'>un mundo lleno de ideas</p>
+          <BtnDark />
         </div>
       </div>
     </section>
