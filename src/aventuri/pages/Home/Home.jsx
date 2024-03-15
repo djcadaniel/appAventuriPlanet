@@ -12,7 +12,7 @@ export const Home = () => {
             <span> </span>
             <span className='block sm:inline-block'>Planet</span>
           </p>
-          <p className='text-2xl text-gray-300'>un mundo lleno de ideas</p>
+          <p className='text-2xl text-gray-300 mb-4'>un mundo lleno de ideas</p>
           <BtnDark />
         </div>
       </div>

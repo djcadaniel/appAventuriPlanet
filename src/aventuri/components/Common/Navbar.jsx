@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom"
 import { ItemNavbar } from "./ItemNavbar"
+import { Logo } from "../Base/Logo"
 // import logo from '../../../../public/img/desktop/logo.png
 
 export const listRoute = [
@@ -30,21 +31,24 @@ export const Navbar = () => {
   const {pathname} = useLocation()
 
   return (
-    <header className={`fixed top-0 w-full ${ (pathname === '/' ? 'bg-blue-900/80' : 'bg-blue-400')}`}>
-      <nav className="main flex flex-row w-full max-w-screen-xl items-center gap-3">
-        <div className="w-full lg:w-[92%] flex flex-row items-center justify-center p-2">
-          <ul className="flex gap-5">
-            {
-              listRoute.map(item => (
-                <li key={item.id} className="text-gray-100">
-                  <ItemNavbar 
-                    {...item}
-                  />
-                </li>
-              ))
-            }
-          </ul>
+    <header className={`fixed w-full ${ (pathname === '/' ? 'bg-blue-900/80' : 'bg-blue-400')}`}>
+      <nav className="main relative md:flex-row w-full min-h-screen md:items-center md:gap-3 md:bg-red-500 bg-black/50">
+        <div className='absolute left-4 top-4'>
+          <Logo />
         </div>
+        <ul className="flex flex-col items-center justify-center w-full min-h-screen gap-5">
+          {
+            listRoute.map(item => (
+              <li key={item.id} className="text-gray-100">
+                <ItemNavbar 
+                  {...item}
+                />
+              </li>
+            ))
+          }
+        </ul>
+        {/* <div className="w-full lg:w-[92%] flex flex-row items-center justify-center">
+        </div> */}
       </nav>
     </header>
   )
