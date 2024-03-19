@@ -1,10 +1,15 @@
 // import imgUniverse from '../../../../public/img/desktop/backgrounImage.png';
+import { useContext } from 'react';
 import { BtnDark } from '../../components/Base/BtnDark';
 import imgUniverse from '/img/desktop/backgrounImage.png';
+import { AventuriContext } from '../../context/AventuriContext';
 
-export const Home = () => {
+export const Home = () => {  
+  
+  const {isActive} = useContext(AventuriContext);
+  
   return (
-    <section className='bg-cover bg-center bg-no-repeat h-screen' style={{backgroundImage: `url(${imgUniverse})`}}>
+    <section className={`bg-cover bg-center bg-no-repeat h-screen ${isActive ? 'filter blur-xl' : ''}`} style={{backgroundImage: `url(${imgUniverse})`}}>
       <div className='main h-screen w-full flex flex-row justify-center items-center'>
         <div className='text-center mb-40'>
           <p className='text-7xl text-white'>
