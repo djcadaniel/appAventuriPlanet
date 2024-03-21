@@ -13,11 +13,11 @@ export const Home = () => {
       <div className={`main h-screen w-full flex flex-row justify-center items-center ${isActive ? 'blur-sm backdrop-blur-sm' : '' }`}>
         <div className='text-center mb-40'>
           <p className='text-7xl text-white'>
-            <span className='block sm:inline-block'>Aventuri</span>
+            <span className='block sm:inline-block font-madimi-title'>Aventuri</span>
             <span> </span>
-            <span className='block sm:inline-block'>Planet</span>
+            <span className='block sm:inline-block font-madimi-title'>Planet</span>
           </p>
-          <p className='text-2xl text-gray-300 mb-4'>un mundo lleno de ideas</p>
+          <p className='text-2xl text-gray-300 mb-4 barlow-descriptionw'>un mundo lleno de ideas</p>
           <BtnDark />
         </div>
       </div>

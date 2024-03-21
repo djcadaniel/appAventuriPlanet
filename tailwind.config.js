@@ -4,7 +4,12 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'barlow-description' : ['Barlow', 'sans-serif'],
+        'madimi-title': ['Madimi One', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
