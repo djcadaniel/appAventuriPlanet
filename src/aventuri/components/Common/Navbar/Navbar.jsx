@@ -24,7 +24,7 @@ export const Navbar = () => {
             <RiMenuLine className="text-4xl text-white"/>
           </button>
         </div>
-      <nav className={`absolute -left-full md:flex-row w-9/12 min-h-screen  ${isActive && 'left-0 '} md:items-center md:gap-3 md:bg-red-500 bg-black/85 transition-all ease-in-out duration-500`}>
+      <nav className={`absolute -left-full md:flex-row w-9/12 min-h-screen  ${isActive && 'left-0 '} md:items-center md:gap-3 md:bg-red-500 bg-blue-950/45 transition-all ease-in-out duration-500`}>
         <ul className="flex flex-col items-center justify-center w-full min-h-screen gap-5">
           {
             listRoute.map(item => (

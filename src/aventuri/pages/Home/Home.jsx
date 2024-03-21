@@ -9,8 +9,8 @@ export const Home = () => {
   const {isActive} = useContext(AventuriContext);
   
   return (
-    <section className={`bg-cover bg-center bg-no-repeat h-screen ${isActive ? 'filter blur-xl' : ''}`} style={{backgroundImage: `url(${imgUniverse})`}}>
-      <div className='main h-screen w-full flex flex-row justify-center items-center'>
+    <section className={`bg-cover bg-center bg-no-repeat `} style={{backgroundImage: `url(${imgUniverse})`}}>
+      <div className={`main h-screen w-full flex flex-row justify-center items-center ${isActive ? 'blur-sm backdrop-blur-sm' : '' }`}>
         <div className='text-center mb-40'>
           <p className='text-7xl text-white'>
             <span className='block sm:inline-block'>Aventuri</span>
