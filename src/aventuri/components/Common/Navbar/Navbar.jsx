@@ -13,32 +13,34 @@ export const Navbar = () => {
   const { isActive } = useContext(AventuriContext)
   
   return (
-    <header className={`z-50 fixed w-full ${ (pathname === '/' ? 'bg-blue-900/80' : 'bg-blue-400')}`}>
+    <header className="w-full bg-red-500">
+      <div className={`main z-50 relative w-full ${ (pathname === '/' ? 'bg-blue-900/80' : 'bg-blue-400')}`} >
         <div className='absolute left-5 top-5 z-50'>
           <Logo />
         </div>
-        <div className='absolute right-5 top-5 z-50'>
+        <div className='absolute md:hidden right-14 top-0 z-50'>
           <button 
             onClick={onChangeMenu}
           >
-            <RiMenuLine className="text-4xl text-white"/>
+            <RiMenuLine className="text-4xl text-white fixed"/>
           </button>
         </div>
-      <nav className={`absolute -left-full md:flex-row w-9/12 min-h-screen  ${isActive && 'left-0 '} md:items-center md:gap-3 md:bg-red-500 bg-blue-950/45 transition-all ease-in-out duration-500`}>
-        <ul className="flex flex-col items-center justify-center w-full min-h-screen gap-5">
-          {
-            listRoute.map(item => (
-              <li key={item.id} className="text-gray-100">
-                <ItemNavbar 
-                  {...item}
-                />
-              </li>
-            ))
-          }
-        </ul>
-        {/* <div className="w-full lg:w-[92%] flex flex-row items-center justify-center">
-        </div> */}
-      </nav>
+        <nav className={`fixed md:fixed md:m-auto -left-full md:left-0  md:flex-row w-9/12 md:w-full h-screen md:h-[50px]  ${isActive && 'left-0 '} md:items-center md:gap-3  bg-blue-950/45 md:bg-black/65 transition-all ease-in-out duration-500`}>
+          <ul className="flex flex-col md:flex-row items-center justify-center w-full h-screen md:h-full gap-5">
+            {
+              listRoute.map(item => (
+                <li key={item.id} className="text-gray-100">
+                  <ItemNavbar 
+                    {...item}
+                  />
+                </li>
+              ))
+            }
+          </ul>
+          {/* <div className="w-full lg:w-[92%] flex flex-row items-center justify-center">
+          </div> */}
+        </nav>
+      </div>
     </header>
   )
 }
