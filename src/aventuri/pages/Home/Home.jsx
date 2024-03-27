@@ -11,7 +11,7 @@ export const Home = () => {
   return (
     <div onClick={()=>setIsActive(!isActive)}>
       <section className={`w-full h-screen bg-azul`}>
-        <div className={`main h-full w-full flex flex-row justify-center items-center ${isActive ? 'blur-sm backdrop-blur-sm' : '' } bg-cover bg-center bg-no-repeat`} style={{backgroundImage: `url(${imgUniverse})`}}>
+        <div className={`main h-full w-full flex flex-row justify-center items-center ${isActive ? 'blur-sm md:blur-none backdrop-blur-sm' : '' } bg-cover bg-center bg-no-repeat`} style={{backgroundImage: `url(${imgUniverse})`}}>
           <div className='text-center mb-40'>
             <p className='text-7xl text-white mb-4'>
               <span className='block sm:inline-block font-madimi-title'>Aventuri</span>
