@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Estilos globales*/
+.title{
+  @apply text-colorTitle text-5xl font-madimi-title
+}
+.subtitle{
+  @apply text-gray-600 text-3xl
+}
