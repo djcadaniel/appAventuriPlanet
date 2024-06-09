@@ -13,7 +13,7 @@ export const Navbar = () => {
   const { isActive } = useContext(AventuriContext)
   
   return (
-    <header className="w-full bg-red-500">
+    <header className="w-full bg-green-700 max-w-[1400px] border border-green-500 mx-auto">
       <div className={`main z-50 relative w-full ${ (pathname === '/' ? 'bg-blue-900/80' : 'bg-blue-400')}`} >
         <div className='absolute left-5 top-5 z-50'>
           <Logo />
