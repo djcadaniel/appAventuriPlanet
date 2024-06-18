@@ -1,14 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&family=Madimi+One&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.contain{
+.container {
   max-width: 1400px;
   min-width: 320px;
   margin: 0 auto;
+  border: 1px solid red;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  max-height: 991px;
+}
+.hero__background {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: bottom center;
+}
+
+.hero__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 150px;
+  text-align: center;
+}
+.hero__container--title {
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.hero__image {
+  position: absolute;
+  top: 85%;
+  right: 0;
+  width: 40%;
+}
+.hero__image img {
+  width: 100%;
+  height: 100%;
 }

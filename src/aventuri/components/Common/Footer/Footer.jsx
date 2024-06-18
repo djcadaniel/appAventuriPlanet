@@ -9,7 +9,7 @@ import { FaPinterestP } from "react-icons/fa";
 export const Footer = () => {
   return (
     <footer className="w-full bg-blue-400">
-      <div className="contain h-screen w-full flex flex-col bg-green-500">
+      <div className="h-screen w-full flex flex-col bg-green-500">
         <div className='relative w-full h-[60%] '>
           <div className='flex flex-row justify-center items-cente  p-6'>
             <img src={imgWorld} alt="" className='w-[60%]' />
