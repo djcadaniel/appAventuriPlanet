@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 import { BtnDark } from '../../components/Base/BtnDark';
 import imgUniverse from '/img/desktop/backgrounImage.png';
-import bgCategorias from '/img/mobile/bgCategoriasMobiles.png';
+import bgCategories from '/img/desktop/bgCategoriesDesktop.png';
 import bgWelcome from '/img/desktop/bgWelcome.png';
 import bgChildrenMobile from '/img/mobile/childrenMobile.png';
 import bgChildrenDesktop from '/img/desktop/childrenDesktop.png';
@@ -30,13 +30,14 @@ export const Home = () => {
     >
       <div className={`w-full bg-azul`}>
         <Hero />
-
         <Welcome />
-
         <section
-          className='h-screen bg-cover bg-center bg-no-repeat'
-          style={{ backgroundImage: `url(${bgCategorias})` }}
+          className='relative h-screen w-full'
+          // style={{ backgroundImage: `url(${bgCategorias})` }}
         >
+          <figure className='absolute w-full h-full -top-80'>
+            <img src={bgCategories} alt="fondo de categorias" className='w-full h-[calc(100vh+20rem)] sm:h-[calc(100vh+70rem)] object-center' />
+          </figure>
           <Categorias />
         </section>
         <section className='h-screen bg-cover bg-center bg-no-repeat bg-white'>

@@ -8,10 +8,11 @@ import { TitleComponentsHome } from '../Common';
 
 export const Categorias = () => {
   return (
-    <div className="relative w-full h-full p-5 md:p-0 lg:p-7">
+    <div className="absolute top-0 left-0 right-0 w-full h-full p-5 md:p-0 lg:p-7 container">
       <div className="w-full h-[20%] flex flex-row flex-wrap md:p-5 md:pt-12">
         <TitleComponentsHome>
-          <h1 className="title inline-block align-bottom">APRENDE, CREA, Y ENSEÑA</h1>
+        <img src={iconStar} alt="" className=' h-10 md:h-12 inline-block mr-2'/>
+        <h1 className='title inline-block align-bottom'>APRENDE, CREA, Y ENSEÑA</h1>
         </TitleComponentsHome>
       </div>
       <div className='w-full h-[80%] grid grid-cols-3 grid-rows-3 md:grid-rows-2 md:p-10'>
