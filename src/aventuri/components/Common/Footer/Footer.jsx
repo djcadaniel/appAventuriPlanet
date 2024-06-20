@@ -5,11 +5,14 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
+import { getBackgoundColor } from '../../../helpers/getBackgroundColor';
+import { useEffect, useState } from 'react';
 
 export const Footer = () => {
+
   return (
-    <footer className="w-full bg-blue-400">
-      <div className="h-screen w-full flex flex-col bg-green-500">
+    <footer className="w-full bg-green-500">
+      <div className="h-screen w-full flex flex-col">
         <div className='relative w-full h-[60%] '>
           <div className='flex flex-row justify-center items-cente  p-6'>
             <img src={imgWorld} alt="" className='w-[60%]' />

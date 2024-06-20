@@ -6,7 +6,7 @@ import iconStar from '/img/mobile/star.png';
 export const Welcome = () => {
   return (
     <section className='bg-white relative h-screen'>
-      <figure className='absolute md:-top-20 bottom-0 right-0 w-[80%] sm:w-[40%] md:w-[30%] min-w-[200px]'>
+      <figure className='absolute md:-top-20 bottom-0 right-0 w-[80%] sm:w-[40%] md:w-[30%] min-w-[200px] z-10'>
         <img
           src='/img/mobile/boysMobile.png'
           alt=''

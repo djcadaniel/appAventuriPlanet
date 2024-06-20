@@ -9,7 +9,8 @@ import { useContext } from 'react';
 
 export const Navbar = () => {
   const { pathname, onChangeMenu } = useMenu();
-  const { isActive } = useContext(AventuriContext);
+  const { isActive, menuColorState } = useContext(AventuriContext);
+  console.log(menuColorState)
 
   return (
     <header className='w-full bg-green-700 max-w-[1400px] mx-auto'>
@@ -23,7 +24,7 @@ export const Navbar = () => {
         </div>
         <div className='absolute md:hidden right-14 top-0 z-50'>
           <button onClick={onChangeMenu}>
-            <RiMenuLine className='text-4xl text-white fixed' />
+            <RiMenuLine className='text-4xl text-white shadow-lg shadow-blue-400 fixed' />
           </button>
         </div>
         <nav
