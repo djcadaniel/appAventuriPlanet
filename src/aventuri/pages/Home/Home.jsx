@@ -5,14 +5,12 @@ import imgUniverse from '/img/desktop/backgrounImage.png';
 import bgCategories from '/img/desktop/bgCategoriesDesktop.png';
 import bgCategoriesMobile from '/img/mobile/bgCategoriesMobile.png';
 import bgWelcome from '/img/desktop/bgWelcome.png';
-import bgChildrenMobile from '/img/mobile/childrenMobile.png';
 import bgChildrenDesktop from '/img/desktop/childrenDesktop.png';
 import { AventuriContext } from '../../context/AventuriContext';
 import { Welcome } from './components/Welcome';
 import { Categorias } from './components/Categorias/Categorias';
 import { Youtube } from './components/Youtube';
 import { Store } from './components/Store';
-import { Camp } from './components/Camp';
 import { Invitation } from './components/Invitation';
 import { Hero } from './components/Hero';
 
@@ -47,12 +45,6 @@ export const Home = () => {
         </section>
         <section className='h-screen bg-cover bg-center bg-no-repeat bg-white'>
           <Store />
-        </section>
-        <section
-          className='h-screen bg-cover bg-center bg-no-repeat bg-white'
-          style={{ backgroundImage: `url(${bgChildrenMobile})` }}
-        >
-          <Camp />
         </section>
         <section className='h-screen bg-cover bg-center bg-no-repeat bg-white'>
           <Invitation />
