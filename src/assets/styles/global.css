@@ -64,3 +64,14 @@ html {
 .image-wrapper {
   flex-shrink: 0;
 }
+
+/*******Instagrama*******/
+.transform{
+  transition: transform 0.5s ease-in-out;
+}
+.transformInstagram img{
+  transition: transform 0.5s ease-in-out;
+}
+.transformInstagram:hover img{
+  transform: scale(1.1);
+}
