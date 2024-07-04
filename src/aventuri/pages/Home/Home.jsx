@@ -49,7 +49,7 @@ export const Home = () => {
             <img src={bgChildrenDesktop} alt="" className='w-full h-full object-center'/>
           </figure> */}
         </section>
-        <section className='h-screen bg-cover bg-center bg-no-repeat bg-white'>
+        <section className='h-auto w-full bg-cover bg-center bg-no-repeat bg-white'>
           <Invitation />
         </section>
       </div>

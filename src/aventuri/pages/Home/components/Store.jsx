@@ -122,7 +122,8 @@ export const Store = () => {
             // style={{ backgroundImage: `url(${bgChildrenMobile})` }}
           >
           <figure className='absolute top-0 left-0 right-0 bottom-0 w-full h-full'>
-            <img src={bgChildrenDesktop} alt="" className='w-full h-full object-center '/>
+            <img src={bgChildrenDesktop} alt="" className='hidden md:block w-full h-full object-center '/>
+            <img src={bgChildrenMobile} alt="" className='block md:hidden w-full h-full object-center  '/>
           </figure>
         </div>
       </div>
