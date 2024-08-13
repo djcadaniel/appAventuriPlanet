@@ -55,7 +55,7 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full font-light text-sm flex justify-center items-center">
+          <div className="w-full font-light text-sm flex flex-col justify-center items-center">
             <p>Todos los dereechos reservados 2024 @ Anveturi Planet</p>
             <p>Desarrollado por Daniel Castro</p>
           </div>
