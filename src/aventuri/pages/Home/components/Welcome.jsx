@@ -10,7 +10,7 @@ export const Welcome = () => {
         <img
           src='/img/mobile/boysMobile.png'
           alt=''
-          className='w-[90%] md:w-[55%] md:h-[55%] lg:w-[35%] xl:w-[40%] xl:h-[70%] 2xl:w-[40%] 2xl:h-[80%]'
+          className='w-[90%] md:w-[55%] md:h-[55%] lg:w-[35%] xl:w-[40%] xl:h-[70%] 2xl:w-[36%] 2xl:h-[80%]'
         />
       </figure>
       <div className='w-full h-full p-5 md:p-5 lg:p-12 container'>
@@ -21,7 +21,7 @@ export const Welcome = () => {
             <span className='subtitle block ml-[5%]'>a Aventuri Planet</span>
             <div className='w-full h-auto md:w-[50%] ml-[0%] md:ml-[5%] pr-0pr-0 md:mb-6'>
               <p className='text-justify mt-10 md:text-xl text-blue-400'>
-                Aquí encontrarás ideas aventureras que necesitas. Navega a través
+                Aquí encontrarás ideas aventureras que necesitgit push as. Navega a través
                 de nuestras secciones y descumbre contenido emocionante, recursos
                 útiles y experiencias enriquecedoras
               </p><br />
