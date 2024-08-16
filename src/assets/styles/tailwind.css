@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 /*Estilos globales*/
-.title{
-  @apply text-colorTitle text-[16px] md:text-[20px] font-title
+.title-p1{
+  @apply text-colorTitle text-[30px] md:text-[38px] font-title font-extrabold
+}
+.title-p2{
+  @apply text-plomo text-[28px] md:text-[38px] font-title font-medium
 }
 .text{
+  @apply text-plomo text-[14px] md:text-[16px] font-text
+}
+.text-footer{
   @apply text-slate-100 text-[14px] md:text-[16px] font-text
 }
 

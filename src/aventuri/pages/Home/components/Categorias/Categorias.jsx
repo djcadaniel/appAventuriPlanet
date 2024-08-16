@@ -11,8 +11,17 @@ export const Categorias = () => {
     <div className="absolute top-0 left-0 right-0 w-full h-full p-5 md:p-0 lg:p-7 container">
       <div className="w-full h-[20%] flex flex-row flex-wrap md:p-5 md:pt-12">
         <TitleComponentsHome>
-          <img src={iconStar} alt="" className=' h-10 md:h-12 inline-block mr-2'/>
-          <h1 className='title inline-block align-bottom'>APRENDE, CREA, Y ENSEÑA</h1>
+          <div className='flex'>
+            <div>
+              <img src={iconStar} alt="" className=' h-10 md:h-12 inline-block mr-2'/>
+            </div>
+            <h1 className=' inline-block align-bottom title-p1'>
+              <div className='flex flex-col'>
+                <span>APRENDE, CREA,</span>
+                <span>ENSEÑA</span>
+              </div>
+            </h1>
+          </div>
         </TitleComponentsHome>
       </div>
       <div className='w-full h-[80%] grid grid-cols-3 grid-rows-3 md:grid-rows-2 md:p-10'>

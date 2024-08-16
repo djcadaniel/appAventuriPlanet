@@ -50,7 +50,7 @@ export const Invitation = () => {
     <div className="w-full h-full p-5 md:p-12 container2">
       <TitleComponentsHome>
         <img src={iconStar} alt="" className=' h-10 md:h-12 inline-block mr-2'/>
-        <h1 className="title inline-block align-bottom">Te invitamos a seguirnos en Instagram</h1>
+        <h1 className="title-p1 inline-block align-bottom">Te invitamos a seguirnos en Instagram</h1>
       </TitleComponentsHome>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2 w-full h-full gap-8 p-5 md:p-14">
         {imagesInstagram.map(item=>(

@@ -25,24 +25,24 @@ export const Footer = () => {
           <img src={bgFooterMobile} alt="imagen de footer" className='w-full h-full object-center object-cover'/>
         </figure>
         <div className="h-full w-full flex flex-col">
-          <div className='relative w-full h-[60%] lg:h-[80%]'>
+          <div className='relative w-full h-[60%] lg:h-[70%]'>
             <div className='flex flex-row justify-center items-center  p-6'>
-              <img src={imgWorld} alt="" className='w-[45%] lg:w-[15%] max-w-[300px] lg:absolute lg:bottom-28 lg:right-14 pt-5' />
+              <img src={imgWorld} alt="" className='w-[45%] lg:w-[14%] max-w-[300px] lg:absolute lg:bottom-28 lg:right-14 pt-5 lg:top-[35%]' />
             </div>
             <img src={girlFooter} alt="" className='block lg:hidden absolute left-8 bottom-2 h-[48%] z-50' />
             <img src={boyFooter} alt="" className='block lg:hidden absolute right-8 bottom-2 h-[48%] z-50' />
-            <img src={nave} alt="" className='hidden lg:block lg:absolute top-[5%] lg:top-[15%] left-[33%] w-[35%]' />
-            <img src={planetaRosa} alt="" className='hidden lg:block lg:absolute top-[30%] left-[5%] w-[15%]' />
+            <img src={nave} alt="" className='hidden lg:block lg:absolute top-[5%] lg:top-[15%] left-[33%] w-[30%]' />
+            <img src={planetaRosa} alt="" className='hidden lg:block lg:absolute top-[38%] left-[5%] w-[13%]' />
             {/* <img src={boyFooter} alt="" className='hidden lg:absolute right-8 bottom-2 h-[48%]' /> */}
           </div>
-          <div className='relative w-full h-[40%] lg:h-[20%] flex flex-row flex-wrap pt-0 text-white'>
+          <div className='relative w-full h-[40%] lg:h-[30%] flex flex-row flex-wrap pt-0 text-white'>
             <figure className='absolute -top-[100px] w-full h-full'>
               <img src={footerAzul} alt="" className='object-center bg-no-repeat w-full h-[25rem] lg:h-[152%] z-20' />
             </figure>
             <div className="z-20 w-full lg:w-[40%] flex flex-row flex-wrap justify-center items-center">
               <div className='text-center'>
                 <h2 className='title text-4xl text-colorBtn'>Aventuri Planet</h2>
-                <span>Inspirate en nuestras redes</span>
+                <span className='text-footer'>Inspirate en nuestras redes</span>
                 <div className='flex'>
                   <img src={<FaInstagram />} alt="" className='h-6 w-6'/>
                   <img src={<FaFacebookF />} alt="" className='h-6'/>
@@ -52,14 +52,14 @@ export const Footer = () => {
               </div>
             </div>
             <div className='z-20 w-full lg:w-[60%] flex'>
-              <div className='w-1/2 flex justify-center items-center'>
+              <div className='w-1/2 flex justify-center items-center text-footer'>
                 <ul>
                   <li>Nosotros</li>
                   <li>Contáctanos</li>
                   <li>Tienda</li>
                 </ul>
               </div>
-              <div className='w-1/2 flex justify-center items-center'>
+              <div className='w-1/2 flex justify-center items-center text-footer'>
                 <ul>
                   <li>Generales</li>
                   <li>Clases</li>
@@ -67,9 +67,23 @@ export const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="z-20 w-full lg:w-full font-light text-sm flex flex-col justify-center items-center bg-[#191D44]">
+            <div className="z-20 w-full lg:w-full font-light text-[10px] md:text-[12px] flex flex-col justify-center items-center bg-[#191D44] italic pb-2">
               <p>Todos los dereechos reservados 2024 @ Anveturi Planet</p>
-              <p>Desarrollado por Daniel Castro</p>
+              <div className='flex gap-2'>
+                <div>
+                  <p>Desarrollado por {' '}
+                    <a href="http://danielcastro.netlify.app" target='_blank'>@djcadaniel</a>
+                  </p>
+                </div>
+                <div>|</div>
+                <div>
+                  <p>Diseñado por {' '}
+                    <a href="http://danielcastro.netlify.app" target='_blank'>@betzabé, </a>
+                    <a href="http://danielcastro.netlify.app" target='_blank'>@benjamín</a>
+                  </p>
+                </div>
+              </div>
+              {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, eveniet omnis minus autem voluptate, aliquid temporibus quasi voluptates repellendus, soluta sunt ex tempora ducimus tempore rem. Maxime animi odit rerum.</p> */}
             </div>
           </div>
         </div>

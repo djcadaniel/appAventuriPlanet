@@ -100,10 +100,10 @@ export const Store = () => {
   console.log(storeImages)
   return (
     <div className="relative w-full h-full p-0 container">
-      <div className='px-12 pt-16 pb-8'>
+      <div className='px-5 pt-10 pb-8'>
         <TitleComponentsHome>
           <img src={iconStar} alt="" className=' h-10 md:h-12 inline-block mr-2'/>
-          <h1 className="title inline-block align-bottom">AVENTURI TIENDA</h1>
+          <h1 className="title-p1 inline-block align-bottom">AVENTURI TIENDA</h1>
         </TitleComponentsHome>
       </div>
 

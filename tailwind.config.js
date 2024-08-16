@@ -11,7 +11,8 @@ export default {
         amarillo: 'rgb(255,208,70)',
         celeste: 'rgb(189,245,234)',
         azul: 'rgb(36,48,127)',
-        turquesa: 'rgb(0,163,152)'
+        turquesa: 'rgb(0,163,152)',
+        plomo: 'rgb(127,127,127)'
       },
       fontFamily: {
         'title' : ['Nunito', 'sans-serif'],
