@@ -4,8 +4,12 @@
 
 /*Estilos globales*/
 .title{
-  @apply text-colorTitle text-4xl md:text-5xl font-madimi-title
+  @apply text-colorTitle text-[16px] md:text-[20px] font-title
 }
-.subtitle{
-  @apply text-gray-600 text-3xl
+.text{
+  @apply text-slate-100 text-[14px] md:text-[16px] font-text
+}
+
+.text-main{
+  @apply text-slate-100 text-[50px] md:text-[60px] font-title
 }

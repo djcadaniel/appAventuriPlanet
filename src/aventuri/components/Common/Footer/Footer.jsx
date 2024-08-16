@@ -41,7 +41,7 @@ export const Footer = () => {
             </figure>
             <div className="z-20 w-full lg:w-[40%] flex flex-row flex-wrap justify-center items-center">
               <div className='text-center'>
-                <h2 className='font-madimi-title text-4xl text-colorBtn'>Aventuri Planet</h2>
+                <h2 className='title text-4xl text-colorBtn'>Aventuri Planet</h2>
                 <span>Inspirate en nuestras redes</span>
                 <div className='flex'>
                   <img src={<FaInstagram />} alt="" className='h-6 w-6'/>

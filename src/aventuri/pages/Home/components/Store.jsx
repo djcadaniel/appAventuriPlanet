@@ -119,7 +119,7 @@ export const Store = () => {
         </div>
         <div
             className='relative h-[45%] w-full bg-cover bg-center bg-no-repeat'
-            // style={{ backgroundImage: `url(${bgChildrenMobile})` }}
+            style={{ backgroundImage: `url(${bgChildrenMobile})` }}
           >
           <figure className='absolute top-0 left-0 right-0 bottom-0 w-full h-full'>
             <img src={bgChildrenDesktop} alt="" className='hidden md:block w-full h-full object-center '/>

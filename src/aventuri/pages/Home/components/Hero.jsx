@@ -14,7 +14,10 @@ export const Hero = () => {
         />
       </figure>
       <div className='hero__container container'>
-        <h1 className='hero__container--title'>AVENTURI PLANET</h1>
+        <h1 className='hero__container--title text-main flex flex-col gap-0 md:gap-5 md:flex-row justify-center'>
+          <span>AVENTURI</span>
+          <span>PLANET</span>
+        </h1>
         <BtnDark />
       </div>
       {/* <figure className='hero__image'>

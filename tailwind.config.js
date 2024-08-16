@@ -14,8 +14,8 @@ export default {
         turquesa: 'rgb(0,163,152)'
       },
       fontFamily: {
-        'barlow-description' : ['Barlow', 'sans-serif'],
-        'madimi-title': ['Madimi One', 'sans-serif']
+        'title' : ['Nunito', 'sans-serif'],
+        'text': ['Comfortaa', 'sans-serif']
       }
     },
   },

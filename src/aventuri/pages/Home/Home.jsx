@@ -34,16 +34,16 @@ export const Home = () => {
           className='relative h-screen w-full'
           // style={{ backgroundImage: `url(${bgCategorias})` }}
         >
-          <figure className='absolute w-full h-full -top-[600px] md:-top-80'>
-            <img src={bgCategoriesMobile} alt="fondo de categorias" className='block md:hidden w-full h-[calc(100vh+38rem)] md:h-[calc(100vh+70rem)] object-center' />
-            <img src={bgCategories} alt="fondo de categorias" className='hidden md:block w-full h-[calc(100vh+20rem)] md:h-[calc(100vh+70rem)] object-center' />
+          <figure className='absolute w-full h-full -top-[380px] md:-top-80'>
+            <img src={bgCategoriesMobile} alt="fondo de categorias" className='block lg:hidden w-full h-[calc(100vh+25rem)] lg:h-[calc(100vh+70rem)] object-center' />
+            <img src={bgCategories} alt="fondo de categorias" className='hidden lg:block w-full h-[calc(100vh+20rem)] lg:h-[calc(100vh+57rem)] 2xl:h-[calc(100vh+52rem)] object-center'/>
           </figure>
           <Categorias />
         </section>
-        <section className='h-screen bg-cover bg-center bg-no-repeat bg-white'>
+        <section className='h-[70vh] bg-cover bg-center bg-no-repeat bg-white'>
           <Youtube />
         </section>
-        <section className='relative h-screen w-full bg-cover bg-center bg-no-repeat bg-white'>
+        <section className='relative h-full w-full bg-cover bg-center bg-no-repeat bg-white'>
           <Store />
           {/* <figure className='absolute  bottom-0  w-full h-[50%]'>
             <img src={bgChildrenDesktop} alt="" className='w-full h-full object-center'/>
